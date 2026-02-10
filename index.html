@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nikita Yurkov</title>
+    <meta
+      name="description"
+      content="Nikita Yurkov's website featuring experience and a hidden long-term market perspective."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon-ny.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="cloud cloud-1" aria-hidden="true"></div>
+    <div class="cloud cloud-2" aria-hidden="true"></div>
+    <div class="cloud cloud-3" aria-hidden="true"></div>
+    <a class="top-resume-button" href="assets/resume/Nikita_Yurkov_Resume.pdf" target="_blank" rel="noopener">View Resume</a>
+
+    <main id="top">
+      <section class="hero">
+        <h1 class="title">Nikita Yurkov</h1>
+        <p class="subtitle">engaged &amp; involved</p>
+      </section>
+
+      <section id="experience" class="content-section">
+        <h2 class="section-title">Experience</h2>
+        <div class="logo-grid" aria-label="Companies I have worked at">
+          <article class="logo-card">
+            <a href="https://wickr.com/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/logos/wickr.png" alt="Wickr logo" loading="lazy" />
+            </a>
+          </article>
+          <article class="logo-card">
+            <a href="https://www.samsara.com/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/logos/samsara.png" alt="Samsara logo" loading="lazy" />
+            </a>
+          </article>
+          <article class="logo-card">
+            <a href="https://block.xyz/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/logos/block.png" alt="Block logo" loading="lazy" />
+            </a>
+          </article>
+          <article class="logo-card">
+            <a href="https://www.dropbox.com/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/logos/dropbox.png" alt="Dropbox logo" loading="lazy" />
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section id="easter-egg-section" class="easter-egg" hidden aria-live="polite">
+        <div class="easter-head">
+          <p class="eyebrow">Hidden Perspective</p>
+          <h2 class="section-title">S&amp;P 500, Last 7 Years</h2>
+        </div>
+        <blockquote id="rule72-quote" class="rule72">
+          "Money doubles roughly every 72 / annual return years. This chart helps me stay anchored to long-term compounding, not short-term noise."
+        </blockquote>
+        <div class="chart-wrap">
+          <canvas id="sp500-chart" role="img" aria-label="Line chart of S and P 500 over the last seven years"></canvas>
+        </div>
+        <p id="chart-status" class="chart-status">Loading market data...</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Connect: <a href="https://www.linkedin.com/in/nysf/" target="_blank" rel="noopener">LinkedIn</a> · <a href="mailto:nyurkov@gmail.com">nyurkov@gmail.com</a></p>
+    </footer>
+  </body>
+</html>
